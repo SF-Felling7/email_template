@@ -12,13 +12,32 @@
   <style type="text/css">
     @media screen and (max-width: 630px) {}
 
-.topHeader {
-  width: 100%;
-  height: 70px;
-  background-color: #DEB887;
-}
+    .topHeader {
+      width: 100%;
+      background-color: #DEB887;
+    }
 
+    .topHeaderContent {
+      padding: 0px;
+    }
+    /* This should also be a block element, so that it will fill 100% of the .container */
 
+    .content {
+      padding: ;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+    }
+    /* Let's make sure tables in the content area are 100% wide */
+
+    .content table {
+      width: 100%;
+    }
+    /*Leading paragraph tag*/
+
+    p.lead {
+      font-size: 20px;
+    }
   </style>
 
 
@@ -26,24 +45,44 @@
 
 <body bgcolor="#F0F8FF" topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
 
-<!-- HEADER -->
+  <!-- HEADER -->
   <table class="topHeader">
     <tr>
       <td></td>
       <td class="topHeaderContent">
 
-      <div>
-        <table bgcolor="#FFF8DC">
-          <tr>
-            <td> <img src="img/brand.png"></td>
-            <td></td>
-          </tr>
+        <div class="content">
+          <table>
+            <tr>
+              <td> <img src="img/brand.png"></td>
+              <td align="left">
+                <h6 class="collapse">Lorem ipsum dolor sit amet, consectetur adipiscing elit. A quibus propter discendi cupiditatem videmus ultimas terras esse peragratas. An est aliquid per se ipsum flagitiosum, etiamsi nulla comitetur infamia? Zenonis est, inquam, hoc Stoici. Hoc est non modo cor non habere, sed ne palatum quidem. Ad quorum et cognitionem et usum iam corroborati natura ipsa praeeunte deducimur. In eo enim positum est id, quod dicimus esse expetendum. Duo Reges: constructio interrete. Maximus dolor, inquit, brevis est. Quid enim? Traditur, inquit, ab Epicuro ratio neglegendi doloris. Quid enim?</h6></td>
+            </tr>
+            <tr>
 
-        </table>
-      </div>
+            </tr>
 
-    </td>
+          </table>
+        </div>
+
+      </td>
     </tr>
+  </table>
+  <!-- HEADER -->
+
+  <!-- BODY -->
+  <table class="bodyWrap">
+    <tr>
+      <td></td>
+      <td class="container"></td>
+      <div>
+        <td>
+          <h3>Hey Francis,</h3>
+          <p class="lead">Cupiditates non Epicuri divisione finiebat, sed sua satietate. Itaque hic ipse iam pridem est reiectus; Tu vero, inquam, ducas licet, si sequetur;</p>
+        </td>
+    </tr>
+    </div>
+
   </table>
 
 </body>
